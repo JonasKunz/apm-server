@@ -281,6 +281,10 @@
                     "us": 32592
                 },
                 "id": "945254c567a5417e",
+                "profiler_stack_trace_ids": [
+                    "foo",
+                    "bar"
+                ],
                 "representative_count": 1,
                 "sampled": true,
                 "span_count": {

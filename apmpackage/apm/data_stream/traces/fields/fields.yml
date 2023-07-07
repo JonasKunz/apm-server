@@ -344,6 +344,10 @@
   index: false
   description: |
     The approximate number of transactions represented, based on the inverse sampling rate.
+- name: transaction.profiler_stack_trace_ids
+  type: keyword
+  description: |
+    The ids of stacktraces collected via universal profiling which were collected for the execution of this transaction
 - name: numeric_labels
   type: object
   dynamic: true
