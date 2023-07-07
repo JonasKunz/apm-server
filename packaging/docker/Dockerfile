@@ -6,6 +6,7 @@ FROM golang:1.20.5 as builder
 WORKDIR /src
 COPY go.mod go.sum /src/
 COPY internal/glog/go.mod /src/internal/glog/go.mod
+COPY apm-data /src/apm-data
 RUN --mount=type=cache,target=/go/pkg/mod go mod download
 COPY Makefile *.mk /src
 COPY cmd /src/cmd
