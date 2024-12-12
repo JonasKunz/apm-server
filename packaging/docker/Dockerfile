@@ -8,6 +8,7 @@ ARG GOLANG_VERSION
 ################################################################################
 FROM golang:${GOLANG_VERSION} as builder
 WORKDIR /src
+COPY apm-data /src/apm-data
 COPY go.mod go.sum .go-version /src/
 COPY internal/glog/go.mod /src/internal/glog/go.mod
 RUN --mount=type=cache,target=/go/pkg/mod go mod download

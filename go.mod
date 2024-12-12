@@ -177,3 +177,5 @@ replace (
 	// command line flags and conflicting with command line flags added by libbeat.
 	github.com/golang/glog => ./internal/glog
 )
+
+replace github.com/elastic/apm-data => ./apm-data
